@@ -1,0 +1,51 @@
+<include file="Public/header" />
+
+<div class="row">
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <span><{$member.name}></span>个人主页
+  </div>
+  <div class="panel-body">
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">TA的任务</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">发帖列表</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+  
+    <div role="tabpanel" class="tab-pane  active" id="profile">
+  <volist name="list" id="vo" >
+      <div class="member-task"><a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>"><{$vo.title}></a>  
+      &nbsp;&nbsp;<span>时间：<{$vo.create_time|date="y-m-d H:i",###}></span></div>
+  </volist>
+    
+   <div><{$page}></div>
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="messages"> 
+    <volist name="list_art" id="vo" >
+    <div class="member-task"><a href="<{:U('Index/articlePage',array('id'=>$vo['category_id'],'aid'=>$vo['article_id']))}>"><{$vo.title}></a>&nbsp;&nbsp;<span>点击：<{$vo.title}></span>&nbsp;&nbsp;<span>发布：<{$vo.create_time|date="y-m-d",###}></span><span>&nbsp;&nbsp;更新：<{$vo.update_time|date="y-m-d",###}></span></div>
+    </volist>
+   
+   <div><{$page_art}></div>
+
+    </div>
+   
+   
+  </div>
+
+</div>
+  </div>
+  <div class="panel-footer"></div>
+</div>
+  
+	</div>
+
+</div>
+
+<include file="Public/footer" />

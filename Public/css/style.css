@@ -1,0 +1,291 @@
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    outline: 0;
+}
+body{
+	padding-top: 70px;
+}
+.navbar-inverse .navbar-brand {
+    color: #ececec;
+}
+.list-header{
+	background-color: #101010;
+	padding: 10px;
+	color: white;
+}
+.list-title{
+	font-size: 16px;
+    font-weight: 700;
+}
+.list-body{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+.list-body span.price{
+	color: #f37171;
+}
+span.list-status{
+	color:white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.list-body .doing,span.list-status{
+	background-color: #52D8D8;
+}
+.list-body .list-time{
+	color:black;
+	font-weight: normal;
+}
+.list-body .done{
+	background-color: #54DA59;
+}
+.list-body .closed{
+	background-color: gray;
+}
+.list-body ul{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list-body ul li{	
+	
+	list-style-position: inside;
+    height: 35px;
+    line-height: 35px;
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+}
+.list-style-a ul li{
+	float:none;
+	margin:10px 0px;
+}
+.list-style-a{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.list-style-a p{
+	word-wrap: break-word;
+}
+.list-style-a span{
+	color: #b3b3b3;
+	font-size: 10px;
+	float: right;
+	margin-right: 20px;
+}
+
+.task-list ul li{
+	float: none;
+}
+.task-list p{
+	width: 100%;
+}
+.task-list ul li{
+	width: 100%;
+}
+.task-list a{
+	text-overflow:ellipsis;
+}
+span.task-info,span.task-author,span.task-time-full{
+	color: black;
+}
+span.task-time{
+	display: none;
+}
+.navigation{
+	text-align: center;
+}
+.post{
+	margin-top: 10px;
+}
+/*page*/
+.m_top{
+    margin-top:8px;
+    overflow: hidden;
+    clear: left;
+}
+.m_top div {
+    float: left;
+    /*width: 50%;*/
+    position: relative;
+}
+
+.ylcon {
+    width: 100%;
+    min-width: 320px;
+}
+
+.tit {
+    height: 26px;
+    line-height: 26px;
+    padding: 0px 15px;
+    position: relative;
+    font-size: 15px;
+    color: #aaa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    clear: left;
+}
+.tit div{
+    float: left;
+    /*width: 50%;*/
+    position: relative;
+}
+.edit_ri{
+    margin-left: 60px;
+}
+.story {
+    border-bottom: 1px dashed #cecece;
+    padding: 0 15px 3px;
+    position: relative;
+    padding: 0 15px 20px;
+}
+
+.story_t {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.story_m {
+    color: rgba(110, 110, 110, 1);
+    line-height: 21px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 1.2em;
+    padding: 2px 0;
+    display: inline;
+}
+
+.story_time {
+    color: rgba(154, 154, 154, 1);
+    padding: 2px 0;
+}
+
+.story_hf {
+    background: rgb(245, 245, 245);
+    font-size: 1.2em;
+    border: 1px solid rgba(204, 204, 204, 0.2);
+    border-radius: 2px;
+    color: rgba(110, 110, 110, 1);
+    padding: 4px;
+    margin-bottom: 5px;
+    display: inline;
+    padding-left: 10px;
+}
+
+.opbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*模态框样式*/
+.modal-footer{
+    text-align: center;
+}
+
+.send-msg{
+	padding: 20px;
+	margin:20px;
+	width: 70%;
+	text-align: center;
+	margin:0 auto;
+}
+.member-task{
+	padding: 10px;
+}
+
+.verify-form{
+	width: 50%;
+	padding-top: 20px;
+}
+
+.post-task-radio{
+	display: inline;
+}
+.register-verifyCode{
+	width: 40%;
+}
+
+.columnEdit{
+	width: 50%;
+}
+footer{
+	color: initial;
+	margin-top: 20px;
+	padding-top: 20px;
+	background-color: burlywood;
+}
+.footer{
+	padding-bottom: 20px;
+}
+footer ul li{
+	margin-top: 5px;
+}
+footer ul{
+	list-style: none;
+}
+@media screen and (max-width: 500px){
+
+	span.task-time-full{
+		display: none;
+	}
+	span.task-time{
+		display: inline;
+		color: black;
+		font-weight: normal;
+	}
+	.list-body{
+		padding: 2px;
+	}
+
+	.list-body span{
+		padding: 1px;
+		margin-right: 0px;
+	}
+	.list-body .list-status{
+		padding:2px;
+		margin-right: 1px;
+	}
+	.list-body ul li{
+		float: none;
+		width: 85%;
+	}
+	.list-style-a span{
+		display: none;
+	}
+	.list-style-a ul{
+		padding-left: 20px;
+	}
+	footer ul li{
+		float: left;
+	}
+	footer ul{
+		margin-bottom: 10px;
+	}
+	footer h3{
+		clear: both;
+	}
+	.task-info .task-author{
+		display: none;
+		font-size: 10px;
+	}
+	.send-msg{
+		width: 80%;
+	}
+	.verify-form{
+		width: 100%;
+	}
+	.columnEdit{
+		width: 100%;
+	}
+}

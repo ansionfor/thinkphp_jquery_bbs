@@ -1,0 +1,60 @@
+<include file="Public/header" />
+
+<div class="row">
+      <div class="list-header">
+        <span class="list-title"><{$category_meta.name}>----发贴</span>
+
+      </div> 
+      <div class="col-md-6">
+    <div class="list-body task-list">
+       <form id="postArticle" onsubmit="return checkArticle();">
+            <input type="hidden" name="category_id" value="<{$category_meta.category_id}>">
+            <div class="form-group">
+              <label for="exampleInputTitle">标题</label>
+              <input type="text" class="form-control" id="exampleInputTitle" name="title" placeholder="标题" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputDetail">内容</label>
+              <textarea class="form-control" rows="3" id="exampleInputDetail" name="content" placeholder="内容" required></textarea>
+            </div>
+             <div class="form-group">
+              <label for="exampleInputVerify">验证码</label>
+              <input type="text" class="form-control" id="exampleInputVerify" name="verifyCode" placeholder="验证码" required>
+            </div>
+            <div class="form-group">
+              <img src="<{:U('Index/verifyCode')}>" onclick="changeCode();" class="img-responsive register-verifyCode" alt="">
+            </div>
+            <button type="submit" class="btn btn-default">发布</button>
+        </form>
+        </div>
+    </div>
+		<div class="col-md-6">
+						
+		</div>
+	</div>
+	
+</div>
+<script type="text/javascript">
+    function checkArticle () 
+    {
+
+        $.ajax({
+          url:"<{:U('Index/addArticle')}>",
+          data:$('#postArticle').serialize(),
+          type:'post',
+          success:function(data){
+                if (data == 1) {
+                  alert('发布成功!')
+                  location.href = "<{:U('Index/index')}>"
+                }else if (data == 2) {
+                  alert('发布失败！请重试')
+                }else{
+                  alert('验证码错误')
+                  changeCode()
+                }
+          }
+        })
+        return false
+    }
+</script>
+<include file="Public/footer" />

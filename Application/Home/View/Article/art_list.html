@@ -1,0 +1,36 @@
+<include file="Public/header" />
+
+	
+<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category_meta.name}></span>
+
+			</div> 
+      <a href="<{:U('Index/postArticle',array('id'=>$category_meta['category_id']))}>"><button type="button" class="btn btn-primary post">我要发贴</button></a>
+			<div class="list-body task-list">
+				<ul>
+				<volist name="list" id="vo" >
+					<li>
+					<p>
+					<a href="<{:U('Index/articlePage',array('id'=>$vo['category_id'],'aid'=>$vo['article_id']))}>">
+					<span class="task-time"><{$vo.create_time|date="H:i",###}></span><{$vo.title}>
+					</a>
+					<span class="task-info pull-right">
+					<span class="task-time-full"><{$vo.create_time|date="y-m-d H:i",###}></span>
+					</span>
+					</p>
+					</li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center">
+		<{$page}>
+	</div>
+
+</div>
+
+<include file="Public/footer" />

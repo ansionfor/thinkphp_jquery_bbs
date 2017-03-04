@@ -1,0 +1,123 @@
+<include file="Public/header" />
+
+<div class="row">
+      <div class="list-header">
+        <span class="list-title">登录/注册</span>
+
+      </div> 
+      <div class="col-md-6">
+    <div class="list-body task-list">
+       <form id="logForm" onsubmit="return checkLog();">
+            <div class="form-group">
+              <label for="exampleInputEmail1">邮箱(登录账户)</label>
+              <input type="email" name="email" class="form-control" id="logInputEmail1" required placeholder="邮箱">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">密码</label>
+              <input type="password" name="pwd" class="form-control" id="logInputPassword1" required placeholder="密码">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputVerify">验证码</label>
+              <input type="text" name="verifyCode" class="form-control" id="logInputVerify" required placeholder="验证码">
+            </div>
+            <div class="form-group">
+              <img src="<{:U('Index/verifyCode')}>" onclick="changeCode();" class="img-responsive register-verifyCode" alt="">
+            </div>
+            <button type="submit" class="btn btn-default">登录</button>
+        </form>
+        </div>
+    </div>
+		<div class="col-md-6">
+			
+			<div class="list-body task-list">
+				  <form id="regForm" onsubmit="return checkReg();">
+            <div class="form-group">
+              <label for="exampleInputEmail1">邮箱(登录账户)</label>
+              <input type="email" name="email" class="form-control" id="regInputEmail1" required placeholder="邮箱">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">密码</label>
+              <input type="password" name="pwd" class="form-control" id="regInputPassword1" required placeholder="密码">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">确认密码</label>
+              <input type="password" name="pwd2" class="form-control" id="regInputPassword2" required placeholder="确认密码">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputVerify">验证码</label>
+              <input type="text" name="verifyCode" class="form-control" id="regInputVerify" required placeholder="验证码">
+            </div>
+            <div class="form-group">
+              <img src="<{:U('Index/verifyCode')}>" onclick="changeCode();" class="img-responsive register-verifyCode" alt="">
+            </div>
+            <button type="submit" class="btn btn-default">注册</button>
+        </form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    /**
+     *会员注册登录
+     */
+    
+    function checkLog()
+    {
+        $.ajax({
+          url:'<{:U("Index/login")}>',
+          data:$('#logForm').serialize(),
+          type:'post',
+          success:function(data){
+              if (data == 1) {
+                  alert('登录成功！')
+                  location.href='<{:U("Index/member")}>'
+              }else if(data == 2){
+                  alert('密码错误！')
+              }else if(data == 3){
+                alert('账户错误！')
+              }else{
+                changeCode()
+                alert('验证码错误!')
+
+              }
+
+          },
+          error:function(XMLHttpRequest, textStatus, errorThrown){
+              console.log(XMLHttpRequest)
+              console.log(textStatus)
+              console.log(errorThrown)
+          }
+        })        
+        return false
+    }
+
+    function checkReg()
+    {
+        if ($('#regInputPassword1').val() == $('#regInputPassword2').val()) {
+             $.ajax({
+                url:'<{:U("Index/register")}>',
+                data:$('#regForm').serialize(),
+                type:'post',
+                success:function(data){
+                    if (data == 1) {
+                        alert('注册成功')
+                        location.href='<{:U("Index/member")}>'
+                    }else if(data == 2){
+                        alert('账户已存在')
+                    }else{
+                        changeCode()
+                        alert('验证码错误')
+                    }
+                }
+              })
+
+        }else{
+            alert('两次密码不匹配')
+        }
+        return false;
+    }
+
+
+
+</script>
+<include file="Public/footer" />

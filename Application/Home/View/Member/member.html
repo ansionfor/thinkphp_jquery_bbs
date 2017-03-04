@@ -1,0 +1,209 @@
+<include file="Public/header" />
+
+<div class="row">
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    欢迎您，<span><{$Think.session.member.name}></span>&nbsp;!
+  </div>
+  <div class="panel-body">
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">任务动态</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">任务列表</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">发帖列表</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">个人信息</a></li>
+    <li role="presentation"><a href="#settingsb" aria-controls="settingsb" role="tab" data-toggle="tab">修改密码</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+
+    <volist name="list" id="vo" >
+    <div class="member-task">
+    <span><{$vo.confirm_time|date="y-m-d H:i",###}></span><br>
+    <span><{$vo.class}>--</span>
+    <span><a href="tel:<{$vo.tel}>"><{$vo.tel}></a></span>的用户
+    <span><a href="<{:U('Index/memberPub',array('mid'=>$vo['member_id']))}>"><{$vo.name}></a></span>确认了你的任务
+    <span><a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>"><{$vo.title}></a></span>
+    <a class="btn btn-default" href="#" onclick="return changeState(1,<{$vo['task_id']}>)" role="button">采纳 </a>
+    <a class="btn btn-default" href="#" onclick="return changeState(2,<{$vo['task_id']}>)" role="button">关闭 </a>
+    </div>
+    </volist>
+
+    <div class="text-center"><{$page}></div> 
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="profile">
+
+      <volist name="list_task" id="vo" >
+      <div class="member-task">
+      <a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>"><{$vo.title}></a>&nbsp;&nbsp;
+      <span>确认人数：<{$vo.confirm}></span>&nbsp;&nbsp;
+      <span>发布：<{$vo.create_time|date="H:i",###}></span>
+      <span>&nbsp;&nbsp;更新：<{$vo.update_time|date="H:i",###}></span>&nbsp;&nbsp;
+      <span>状态：
+          <switch name="vo.state" >
+          <case value="1"><span class="list-status doing">进行中</span></case>
+          <case value="2"><span class="list-status done">已完成</span></case>
+          <case value="3"><span class="list-status closed">已关闭</span></case>
+          </switch>
+      </span>
+      </div>
+      </volist>
+
+   <div class="text-center"><{$page_task}></div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="messages"> 
+
+    <volist name="list_art" id="vo" >
+    <div class="member-task">
+    <a href="<{:U('Index/articlePage',array('aid'=>$vo['article_id']))}>"><{$vo.title}></a>&nbsp;&nbsp;
+    <span>点击：<{$vo.click}></span>&nbsp;&nbsp;
+    <span>发布：<{$vo.create_time|date="y-m-d",###}></span>
+    <span>&nbsp;&nbsp;更新：<{$vo.update_time|date="y-m-d",###}></span>
+    </div>
+    </volist>
+
+  <div class="text-center"><{$page_art}></div>
+
+    </div>
+
+
+
+
+    <div role="tabpanel" class="tab-pane" id="settings">
+       <form id="changeInfo" class="verify-form" onsubmit="return changeInfo();">
+            <div class="form-group">
+              <label for="exampleInputName">昵称</label>
+              <input type="text" name="name" class="form-control" value="<{$member.name}>" id="exampleInputName" placeholder="昵称" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputTel">手机</label>
+              <input type="number" name="tel" class="form-control" value="<{$member.tel}>" id="exampleInputTel" placeholder="真实手机--线下联系必填" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputAdd">班级</label>
+              <input type="text" name="class" class="form-control" value="<{$member.class}>"  id="exampleInputAdd" placeholder="计商142--确认任务必填" required>
+            </div>
+            <button type="submit" class="btn btn-default">更新信息</button>
+        </form>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settingsb">
+    <form id="changePwd" class="verify-form" onsubmit="return changePwd();">
+            <div class="form-group">
+              <label for="exampleInputEmail">邮箱</label>
+              <input type="email" name="email" class="form-control" value="<{$member.email}>" id="exampleInputEmail" placeholder="邮箱" disabled required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPwd">密码</label>
+              <input type="password" name="pwd" class="form-control" id="InputPwd1" placeholder="密码" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPwd">确认密码</label>
+              <input type="password" name="pwd2" class="form-control" id="InputPwd2" placeholder="确认密码" required>
+            </div>
+            <button type="submit" class="btn btn-default">修改</button>
+        </form>
+    </div>
+  </div>
+
+</div>
+  </div>
+  <div class="panel-footer"></div>
+</div>
+	</div>	
+</div>
+
+<script>
+  function changeState (type,tid) {
+    if (type==1) {
+      var result = confirm('您是否已经与对方完成交易？')
+      if (!result) {
+        return
+      }
+    }else if (type==2) {
+      var result = confirm('确定关闭吗？')
+      if (!result) {
+        return
+      }
+    }
+    
+    $.ajax({
+      url:"<{:U('Index/changeState')}>",
+      type:'get',
+      data:{
+        'type':type,
+        'tid':tid
+      },
+      success:function(data){
+        if (data == 1) {
+          alert('采纳成功')
+          location.href=location.href
+        }else if (data == 2) {
+          alert('采纳失败，请重试')
+        }else if (data == 3) {
+          alert('关闭成功')
+          location.href=location.href
+        }else if (data == 4){
+          alert('关闭失败，请重试')
+        }
+      }
+    })
+    return false
+  }
+
+
+  function changeInfo (argument) {
+    
+    $.ajax({
+      url:"<{:U('Index/changeInfo',array('type'=>1))}>",
+      type:'post',
+      data:$('#changeInfo').serialize(),
+      success:function(data){
+        if (data == 1) {
+          alert('修改成功')
+        }else if (data == 2) {
+          alert('修改失败')
+        }else if (data == 5) {
+          alert('非法操作')
+        };
+      }
+    })
+
+    return false
+  }
+
+  function changePwd (argument) {
+    if ($('#InputPwd1').val()!=$('#InputPwd2').val()) {
+        alert('两次密码不匹配')
+        return false
+    }else{
+      $.ajax({
+        url:"<{:U('Index/changeInfo',array('type'=>2))}>",
+        type:'post',
+        data:$('#changePwd').serialize(),
+        success:function(data){
+           if (data == 3) {
+            alert('修改成功')
+            location.href = "<{:U('Index/regLog')}>"
+          }else if (data == 4) {
+            alert('修改失败')
+          }else if (data == 5) {
+            alert('非法操作')
+          };
+        }
+      })
+    }
+
+
+    return false
+  }
+
+</script>
+
+
+<include file="Public/footer" />

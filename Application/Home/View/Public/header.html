@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="keywords" content="<{$web.keywords}>">
+  <meta name="description" content="<{$web.desc}>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><{$web.name}>-<{$category_meta.name}>-<{$web.title}></title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    function changeCode()
+    {
+        $('img').attr('src',"<{:U('Index/verifyCode')}>?"+Math.random())
+    }
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="__ROOT__">
+      <{$web.name}>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       
+        <li><a href="__ROOT__">首页</a></li>
+
+        <volist name="category" id="parent" >
+        <if condition="$parent.child_num gt 0">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><{$parent.name}> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <volist name="category" id="child" >
+            <if condition="$child.parent_id eq $parent['category_id']">
+            <li><a href="<{:U('Index/distrib',array('id'=>$child['category_id']))}>"><{$child.name}></a></li>
+            </if>
+            </volist>
+          </ul>
+        </li>
+        
+        </if>
+        </volist>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <if condition="$Think.session.member eq null" >
+        <li><a href="<{:U('Index/regLog')}>">注册</a></li>
+        <li><a href="<{:U('Index/regLog')}>">登录</a></li>
+        <else />
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><{$Think.session.member.name}> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="<{:U('Index/member')}>">个人中心</a></li>
+            <li><a href="<{:U('Index/logout')}>">退出</a></li>
+          </ul>
+        </li>
+        </if>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="top-breadcrumb">
+      <ol class="breadcrumb">
+        <li><a href="__ROOT__">首页</a></li>
+        <volist name="crumb" id="crumb" >
+        <li><a href="<{:U('Index/distrib',array('id'=>$crumb['category_id']))}>"><{$crumb.name}></a></li>
+        </volist>        
+      </ol>
+    </div>
+  </div>

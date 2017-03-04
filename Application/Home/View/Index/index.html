@@ -1,0 +1,75 @@
+<include file="Public/header" />
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category.1.name}><a href="<{:U('Index/distrib',array('id'=>2))}>" class="pull-right">更多>></a></span>
+			</div>
+			<div class="list-body">
+				<ul>
+					<volist name="need" id="vo" >
+					<li>
+					<a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>">
+					<switch name="vo.state" >
+					<case value="1"><span class="list-status doing">进行中</span></case>
+					<case value="2"><span class="list-status done">已完成</span></case>
+					<case value="3"><span class="list-status closed">已关闭</span></case>
+					</switch>			
+					<span class="price"><{$vo.price}></span><span class="list-time"><{$vo.create_time|date="H:i",###}></span><{$vo.title}></a></li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category.2.name}><a href="<{:U('Index/distrib',array('id'=>3))}>" class="pull-right">更多>></a></span>
+			</div>
+			<div class="list-body">
+				<ul>
+				<volist name="service" id="vo" >
+					<li><a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>">					
+					<switch name="vo.state" >
+					<case value="1"><span class="list-status doing">进行中</span></case>
+					<case value="2"><span class="list-status done">已完成</span></case>
+					<case value="3"><span class="list-status closed">已关闭</span></case>
+					</switch>
+					<span class="price"><{$vo.price}></span><span class="list-time"><{$vo.create_time|date="H:i",###}></span><{$vo.title}></a></li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category.4.name}><a href="<{:U('Index/distrib',array('id'=>5))}>" class="pull-right">更多>></a></span>
+			</div>
+			<div class="list-style-a">
+				<ul>
+					<volist name="article_5" id='vo' >
+					<li><p><a href="<{:U('Index/articlePage',array('id'=>$vo['category_id'],'aid'=>$vo['article_id']))}>"><{$vo.title}></a><span><{$vo.create_time|date="y-m-d",###}></span></p></li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category.5.name}><a href="<{:U('Index/distrib',array('id'=>6))}>" class="pull-right">更多>></a></span>
+			</div>
+			<div class="list-style-a">
+				<ul>
+				<volist name="article_6" id='vo' >
+					<li><p><a href="<{:U('Index/articlePage',array('id'=>$vo['category_id'],'aid'=>$vo['article_id']))}>"><{$vo.title}></a><span><{$vo.create_time|date="y-m-d",###}></span></p></li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr class="drivers">
+</div>
+
+<include file="Public/footer" />

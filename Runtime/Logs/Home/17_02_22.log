@@ -1,0 +1,1698 @@
+[ 2017-02-22T10:21:29+08:00 ] 101.226.33.206 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0032s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0069s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0025s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0064s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0009s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-02-22T10:21:31+08:00 ] 183.43.30.58 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0024s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0025s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0013s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-02-22T10:21:50+08:00 ] 183.43.30.58 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0005s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0007s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-02-22T10:22:32+08:00 ] 183.43.30.58 /web/Index/taskPage/tid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '10' LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-02-22T10:22:32+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0013s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2017-02-22T10:22:38+08:00 ] 183.43.30.58 /web/Index/distrib/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0012s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time desc LIMIT 0,30   [ RunTime:0.0015s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/7b286aa6dd9947169c703853f5d248b2.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2017-02-22T10:22:40+08:00 ] 183.43.30.58 /web/Index/postTask.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0012s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0004s ]
+
+[ 2017-02-22T10:22:42+08:00 ] 183.43.30.58 /web/Index/regLog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0005s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2017-02-22T10:22:42+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0005s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-02-22T10:23:05+08:00 ] 183.43.30.58 /web/Index/taskPage/tid/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '44' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-02-22T10:23:06+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2017-02-22T10:23:13+08:00 ] 183.43.30.58 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0018s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0008s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2017-02-22T10:23:26+08:00 ] 183.43.30.58 /web/Index/taskPage/tid/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '39' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-02-22T10:23:26+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0011s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-02-22T10:28:48+08:00 ] 183.43.30.58 /web/Index/taskPage/tid/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '12' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-02-22T10:28:49+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2017-02-22T10:29:04+08:00 ] 183.43.30.58 /web/Index/distrib/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0060s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time desc LIMIT 0,30   [ RunTime:0.0012s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/7b286aa6dd9947169c703853f5d248b2.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2017-02-22T10:29:06+08:00 ] 183.43.30.58 /web/Index/postTask.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0006s ]
+
+[ 2017-02-22T10:29:07+08:00 ] 183.43.30.58 /web/Index/regLog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/e2f1e8739761dd1b07196da7c9136d50.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2017-02-22T10:29:07+08:00 ] 183.43.30.58 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2017-02-22T12:16:58+08:00 ] 183.43.134.207 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005373s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0013s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008034s ]
+
+[ 2017-02-22T12:18:30+08:00 ] 183.43.134.207 /web/Index/articlePage/id/6/aid/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0012s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0023s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 6 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 6 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT m.name,a.member_id,a.title,a.article_id,a.content,a.click,a.create_time FROM bbs_article a INNER JOIN bbs_member m ON m.member_id = a.member_id  WHERE `article_id` = '8' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.comment_id,c.parent_id,c.article_id,c.member_id,c.content,c.create_time,m.name FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.article_id=8 and c.status=1 and c.is_delete=0 ) ORDER BY c.create_time desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/b5185423cd2671a1c9fbe1227e022ea3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-02-22T12:18:31+08:00 ] 183.43.134.207 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001596s ]
+
+[ 2017-02-22T12:18:41+08:00 ] 101.226.66.193 /web/Index/articlePage/id/6/aid/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT m.name,a.member_id,a.title,a.article_id,a.content,a.click,a.create_time FROM bbs_article a INNER JOIN bbs_member m ON m.member_id = a.member_id  WHERE `article_id` = '8' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT c.comment_id,c.parent_id,c.article_id,c.member_id,c.content,c.create_time,m.name FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.article_id=8 and c.status=1 and c.is_delete=0 ) ORDER BY c.create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/b5185423cd2671a1c9fbe1227e022ea3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2017-02-22T12:19:08+08:00 ] 183.43.134.207 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0016s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-02-22T12:42:29+08:00 ] 117.136.41.34 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0041s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0096s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0011s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0032s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002964s ]
+
+[ 2017-02-22T22:39:03+08:00 ] 183.6.46.6 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029110s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0015s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0039s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0017s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0022s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004527s ]
+
+[ 2017-02-22T22:39:07+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0011s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '10' LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2017-02-22T22:39:07+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0029s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2017-02-22T22:39:09+08:00 ] 183.6.46.6 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0016s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0013s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0038s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0016s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0009s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-02-22T22:39:12+08:00 ] 183.6.46.6 /web/Index/articlePage/id/5/aid/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0012s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT m.name,a.member_id,a.title,a.article_id,a.content,a.click,a.create_time FROM bbs_article a INNER JOIN bbs_member m ON m.member_id = a.member_id  WHERE `article_id` = '61' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT c.comment_id,c.parent_id,c.article_id,c.member_id,c.content,c.create_time,m.name FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.article_id=61 and c.status=1 and c.is_delete=0 ) ORDER BY c.create_time desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/b5185423cd2671a1c9fbe1227e022ea3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002601s ]
+
+[ 2017-02-22T22:39:12+08:00 ] 180.163.2.117 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001830s ]
+
+[ 2017-02-22T22:39:12+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2017-02-22T22:39:18+08:00 ] 101.226.85.67 /web/Index/taskPage/tid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '10' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2017-02-22T22:39:18+08:00 ] 183.6.46.6 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0048s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0028s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0033s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0064s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-02-22T22:39:22+08:00 ] 180.163.2.118 /web/Index/articlePage/id/5/aid/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT m.name,a.member_id,a.title,a.article_id,a.content,a.click,a.create_time FROM bbs_article a INNER JOIN bbs_member m ON m.member_id = a.member_id  WHERE `article_id` = '61' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT c.comment_id,c.parent_id,c.article_id,c.member_id,c.content,c.create_time,m.name FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.article_id=61 and c.status=1 and c.is_delete=0 ) ORDER BY c.create_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/b5185423cd2671a1c9fbe1227e022ea3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2017-02-22T22:39:24+08:00 ] 183.6.46.6 /web/Index/distrib/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0026s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0033s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time desc LIMIT 0,30   [ RunTime:0.0034s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/7b286aa6dd9947169c703853f5d248b2.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-02-22T22:39:32+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '13' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002192s ]
+
+[ 2017-02-22T22:39:32+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2017-02-22T22:39:34+08:00 ] 101.226.125.105 /web/Index/distrib/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0011s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time desc LIMIT 0,30   [ RunTime:0.0009s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/7b286aa6dd9947169c703853f5d248b2.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-02-22T22:39:42+08:00 ] 101.226.51.227 /web/Index/taskPage/tid/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '13' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2017-02-22T22:40:42+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0053s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '13' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2017-02-22T22:40:42+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0041s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = 'index.js.map' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2017-02-22T22:40:42+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0025s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2017-02-22T22:40:43+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = 'index.js.map' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-02-22T22:42:36+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0123s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = 'index.js.map' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+
+[ 2017-02-22T22:42:36+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0120s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '13' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-02-22T22:42:36+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0006s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2017-02-22T22:42:36+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = 'index.js.map' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2017-02-22T22:42:39+08:00 ] 183.6.46.6 /web/Index/memberPub/mid/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0008s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0005s ]
+SQL: SELECT `member_id`,`name` FROM `bbs_member` WHERE `member_id` = 13 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 and status=1 and member_id=13 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bbs_task` WHERE ( is_delete=0 and status=1 and member_id=13 ) ORDER BY create_time LIMIT 0,30   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 and status=1 and member_id=13 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bbs_article` WHERE ( is_delete=0 and status=1 and member_id=13 ) ORDER BY create_time LIMIT 0,30   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/c758a6b85422c2b933cc95ebf88511b8.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/c758a6b85422c2b933cc95ebf88511b8.php 第 49 行.
+NOTIC: [4096] Object of class Think\Page could not be converted to string /www/users/HK124144/WEB/web/Runtime/Cache/Home/c758a6b85422c2b933cc95ebf88511b8.php 第 97 行.
+NOTIC: [4096] Object of class Think\Page could not be converted to string /www/users/HK124144/WEB/web/Runtime/Cache/Home/c758a6b85422c2b933cc95ebf88511b8.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-02-22T22:47:08+08:00 ] 183.6.46.6 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0026s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0036s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0007s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `bbs_task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 12   [ RunTime:0.0013s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0052s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `bbs_article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined variable: category_meta /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2017-02-22T22:47:10+08:00 ] 183.6.46.6 /web/Index/taskPage/tid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0007s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 257 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category` LIMIT 1   [ RunTime:0.0084s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 258 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM bbs_task t INNER JOIN bbs_member m ON m.member_id=t.member_id  WHERE `task_id` = '10' LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: id /www/users/HK124144/WEB/web/Application/Home/Controller/IndexController.class.php 第 266 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `bbs_category` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: member /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 49 行.
+NOTIC: [8] Undefined index: content /www/users/HK124144/WEB/web/Runtime/Cache/Home/a47777a90bbb3b01edf91292bdf91cbe.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2017-02-22T22:47:11+08:00 ] 183.6.46.6 /web/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_task_confirm` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbs_config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bbs_category`  [ RunTime:0.0011s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `bbs_category`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
+

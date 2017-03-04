@@ -1,0 +1,1902 @@
+[ 2017-02-21T09:23:02+08:00 ] 183.6.46.6 /web/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:23:02+08:00 ] 183.6.46.6 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2017-02-21T09:23:03+08:00 ] 183.6.46.6 /web/admin.php/Login/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004040s ]
+
+[ 2017-02-21T09:23:08+08:00 ] 183.6.46.6 /web/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbs_admin` WHERE ( name='admin' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_admin` WHERE `name` = 'admin' AND `pwd` = '2ada32abd06e8be8598f9c97a6fdbd98c80f000b70c97dc014519eb18a925e46' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2017-02-21T09:23:10+08:00 ] 183.6.46.6 /web/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-02-21T09:23:12+08:00 ] 183.6.46.6 /web/admin.php/Index/category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0065s ]
+SQL: SELECT `category_id`,`parent_id`,`name`,`order`,`child_num` FROM `bbs_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-02-21T09:23:15+08:00 ] 183.6.46.6 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-02-21T09:23:17+08:00 ] 101.226.33.203 /web/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:23:17+08:00 ] 101.226.33.203 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-02-21T09:23:37+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0050s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=12 ) [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-02-21T09:23:39+08:00 ] 183.6.46.6 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-02-21T09:23:41+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2017-02-21T09:23:49+08:00 ] 180.153.160.24 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:23:49+08:00 ] 180.153.160.24 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2017-02-21T09:23:51+08:00 ] 140.207.185.112 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:23:51+08:00 ] 140.207.185.112 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2017-02-21T09:23:52+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 30,15   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2017-02-21T09:23:53+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002864s ]
+
+[ 2017-02-21T09:23:55+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0035s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=31 ) [ RunTime:0.0058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2017-02-21T09:23:57+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-02-21T09:23:58+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0038s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=32 ) [ RunTime:0.1296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-02-21T09:23:59+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-02-21T09:24:00+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0021s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=33 ) [ RunTime:0.0093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2017-02-21T09:24:01+08:00 ] 180.163.2.119 /web/admin.php/Index/task/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:24:01+08:00 ] 180.163.2.119 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001762s ]
+
+[ 2017-02-21T09:24:02+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2017-02-21T09:24:04+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=34 ) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2017-02-21T09:24:05+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2017-02-21T09:24:06+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0016s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=35 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2017-02-21T09:24:07+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001617s ]
+
+[ 2017-02-21T09:24:08+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=36 ) [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2017-02-21T09:24:10+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-02-21T09:24:13+08:00 ] 183.6.46.6 /web/admin.php/Index/deleteTask.html?tid=37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: UPDATE `bbs_task` SET `is_delete`='1' WHERE ( task_id=37 ) [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-02-21T09:24:15+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-02-21T09:24:17+08:00 ] 183.6.46.6 /web/admin.php/Index/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005497s ]
+
+[ 2017-02-21T09:24:20+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2017-02-21T09:24:22+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 30,15   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-02-21T09:24:24+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 45,15   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-02-21T09:24:30+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+NOTIC: [8] Undefined index: state /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a4dae8ab0d3ee2307540da4aeed1cad6.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-02-21T09:24:32+08:00 ] 180.153.206.20 /web/admin.php/Index/article/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:24:32+08:00 ] 180.153.206.20 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2017-02-21T09:24:32+08:00 ] 180.163.2.118 /web/admin.php/Index/article/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:24:33+08:00 ] 180.163.2.118 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-02-21T09:25:56+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2017-02-21T09:25:57+08:00 ] 183.6.46.6 /web/admin.php/Index/article/p/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2017-02-21T09:26:01+08:00 ] 183.6.46.6 /web/admin.php/Index/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `member_id`,`name`,`email`,`tel`,`class`,`status`,`create_time`,`last_time` FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 0,15   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2017-02-21T09:26:16+08:00 ] 180.153.212.13 /web/admin.php/Index/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:26:17+08:00 ] 180.153.212.13 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004745s ]
+
+[ 2017-02-21T09:27:03+08:00 ] 183.6.46.6 /web/admin.php/Index/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `member_id`,`name`,`email`,`tel`,`class`,`status`,`create_time`,`last_time` FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 0,15   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-02-21T09:27:08+08:00 ] 183.6.46.6 /web/admin.php/Index/comment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT c.comment_id,c.content,m.name,m.member_id,c.status,c.create_time FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-02-21T09:27:15+08:00 ] 183.6.46.6 /web/admin.php/Index/config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_config` LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2017-02-21T09:27:17+08:00 ] 180.153.206.21 /web/admin.php/Index/comment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:27:17+08:00 ] 180.153.206.21 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2017-02-21T09:27:25+08:00 ] 101.226.66.179 /web/admin.php/Index/config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:27:25+08:00 ] 101.226.66.179 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2017-02-21T09:30:28+08:00 ] 119.147.146.60 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T09:30:28+08:00 ] 119.147.146.60 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2017-02-21T09:30:29+08:00 ] 119.147.146.60 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2017-02-21T09:30:56+08:00 ] 183.6.46.6 /web/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2017-02-21T09:30:59+08:00 ] 183.6.46.6 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-02-21T09:31:04+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 30,15   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2017-02-21T09:31:06+08:00 ] 183.6.46.6 /web/admin.php/Index/task/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 15,15   [ RunTime:0.0176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2017-02-21T20:12:58+08:00 ] 116.22.197.51 /web/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+
+[ 2017-02-21T20:12:59+08:00 ] 116.22.197.51 /web/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2017-02-21T20:12:59+08:00 ] 116.22.197.51 /web/admin.php/Login/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-02-21T20:13:20+08:00 ] 116.22.197.51 /web/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bbs_admin` WHERE ( name='admin' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bbs_admin` WHERE `name` = 'admin' AND `pwd` = '9a1c47426458e51dad06c4dba37b4c3c911bd30e33b1b8243e2f9109de07afb2' LIMIT 1   [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-02-21T20:13:22+08:00 ] 116.22.197.51 /web/admin.php/Login/verifyCode.html?0.5761878879687898
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2017-02-21T20:13:40+08:00 ] 116.22.197.51 /web/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `bbs_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbs_admin` WHERE ( name='admin' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bbs_admin` WHERE `name` = 'admin' AND `pwd` = '2ada32abd06e8be8598f9c97a6fdbd98c80f000b70c97dc014519eb18a925e46' LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2017-02-21T20:13:42+08:00 ] 116.22.197.51 /web/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001517s ]
+
+[ 2017-02-21T20:13:47+08:00 ] 116.22.197.51 /web/admin.php/Index/category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0013s ]
+SQL: SELECT `category_id`,`parent_id`,`name`,`order`,`child_num` FROM `bbs_category`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2017-02-21T20:13:51+08:00 ] 116.22.197.51 /web/admin.php/Index/categoryEdit/cid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbs_category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-02-21T20:13:58+08:00 ] 116.22.197.51 /web/admin.php/Index/categoryEdit/cid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbs_category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2017-02-21T20:14:03+08:00 ] 116.22.197.51 /web/admin.php/Index/categoryEdit/cid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbs_category` WHERE `category_id` = 3 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-02-21T20:14:06+08:00 ] 116.22.197.51 /web/admin.php/Index/categoryEdit/cid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbs_category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-02-21T20:14:08+08:00 ] 116.22.197.51 /web/admin.php/Index/category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT `category_id`,`parent_id`,`name`,`order`,`child_num` FROM `bbs_category`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2017-02-21T20:14:09+08:00 ] 116.22.197.51 /web/admin.php/Index/task.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_task` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT t.title,t.task_id,t.type,t.state,t.status,t.create_time,t.update_time,m.name,m.member_id FROM bbs_task t INNER JOIN bbs_member m ON t.member_id=m.member_id  WHERE ( t.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-02-21T20:14:24+08:00 ] 116.22.197.51 /web/admin.php/Index/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2017-02-21T20:14:33+08:00 ] 116.22.197.51 /web/admin.php/Index/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_article` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT a.title,a.article_id,a.category_id,a.status,a.create_time,a.update_time,c.name cname,m.name,m.member_id FROM bbs_article a INNER JOIN bbs_member m ON a.member_id=m.member_id INNER JOIN bbs_category c ON c.category_id=a.category_id  WHERE ( a.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2017-02-21T20:14:33+08:00 ] 116.22.197.51 /web/admin.php/Index/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `member_id`,`name`,`email`,`tel`,`class`,`status`,`create_time`,`last_time` FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 0,15   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+NOTIC: [8] Undefined index: update_time /www/users/HK124144/WEB/web/Runtime/Cache/Admin/a57f49965ac165e35a529c219c47e4cc.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-02-21T20:14:40+08:00 ] 116.22.197.51 /web/admin.php/Index/comment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_member` WHERE ( is_delete=0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT c.comment_id,c.content,m.name,m.member_id,c.status,c.create_time FROM bbs_comment c INNER JOIN bbs_member m ON m.member_id=c.member_id  WHERE ( c.is_delete=0 ) LIMIT 0,15   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-02-21T20:14:42+08:00 ] 116.22.197.51 /web/admin.php/Index/config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::_initialize() should be compatible with Admin\Controller\PublicController::_initialize($value = '') /www/users/HK124144/WEB/web/Application/Admin/Controller/IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bbs_task` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `bbs_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bbs_comment` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bbs_config` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbs_config` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+

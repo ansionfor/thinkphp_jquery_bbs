@@ -1,0 +1,574 @@
+[ 2017-02-16T15:55:11+08:00 ] ::1 /college1/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_meta F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-16T15:55:46+08:00 ] ::1 /college1/Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-02-16T15:56:02+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:14+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:15+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:23+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:36+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:40+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:42+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T15:56:47+08:00 ] ::1 /college1/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-02-16T15:58:39+08:00 ] ::1 /college1/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-02-16T15:58:40+08:00 ] ::1 /college1/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Home
+
+[ 2017-02-16T16:11:24+08:00 ] ::1 /college1/admin.php/public/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:home
+
+[ 2017-02-16T16:16:23+08:00 ] ::1 /college1/admin.php/public/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:home
+
+[ 2017-02-16T16:16:26+08:00 ] ::1 /college1/Admin/Index/category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-02-16T16:17:03+08:00 ] ::1 /college1/Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-02-16T16:17:12+08:00 ] ::1 /college1/public/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:home
+
+[ 2017-02-16T16:18:32+08:00 ] ::1 /college1/public/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:home
+
+[ 2017-02-16T16:18:40+08:00 ] ::1 /college1/Index/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+ERR: 非法操作:category
+
+[ 2017-02-16T16:20:10+08:00 ] ::1 /college1/public/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:home
+
+[ 2017-02-16T17:42:17+08:00 ] ::1 /college1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_meta F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-16T20:18:54+08:00 ] ::1 /college1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_meta F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-16T20:18:57+08:00 ] ::1 /college1/Index/taskPage/tid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 258 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 259 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM task t INNER JOIN member m ON m.member_id=t.member_id  WHERE `task_id` = '4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `category` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 49 行.
+NOTIC: [8] Undefined index: content F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 87 行.
+NOTIC: [8] Undefined variable: vo F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-16T20:18:58+08:00 ] ::1 /college1/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-16T20:19:01+08:00 ] ::1 /college1/Index/distrib/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY create_time LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `category` WHERE `category_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\7b286aa6dd9947169c703853f5d248b2.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-16T20:19:03+08:00 ] ::1 /college1/Index/taskPage/tid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 258 行.
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 259 行.
+SQL: SELECT m.name,m.member_id,t.task_id,t.title,t.state,t.create_time,t.confirm FROM task t INNER JOIN member m ON m.member_id=t.member_id  WHERE `task_id` = '4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\college1\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `category` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 49 行.
+NOTIC: [8] Undefined index: content F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 87 行.
+NOTIC: [8] Undefined variable: vo F:\phpstudy\WWW\college1\Runtime\Cache\Home\0d050b8b448fc996d1f378498836521d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-16T20:19:05+08:00 ] ::1 /college1/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-16T20:19:06+08:00 ] ::1 /college1/Index/distrib/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\7eff57487c669f20d964896fa0321b07.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-16T20:19:08+08:00 ] ::1 /college1/Index/articlePage/id/5/aid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category` WHERE `category_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`name`,`title`,`desc` FROM `category` WHERE `category_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT m.name,a.member_id,a.title,a.article_id,a.content,a.click,a.create_time FROM article a INNER JOIN member m ON m.member_id = a.member_id  WHERE `article_id` = '2' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.comment_id,c.parent_id,c.article_id,c.member_id,c.content,c.create_time,m.name FROM comment c INNER JOIN member m ON m.member_id=c.member_id  WHERE ( c.article_id=2 and c.status=1 and c.is_delete=0 ) ORDER BY c.create_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\b5185423cd2671a1c9fbe1227e022ea3.php 第 49 行.
+NOTIC: [8] Undefined variable: vo F:\phpstudy\WWW\college1\Runtime\Cache\Home\b5185423cd2671a1c9fbe1227e022ea3.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-16T20:19:09+08:00 ] ::1 /college1/Index/verifyCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-16T20:20:02+08:00 ] ::1 /college1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `task_confirm` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config` WHERE `config_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `category_id`,`parent_id`,`name` FROM `category`  [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=2 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `task_id`,`title`,`type`,`price`,`state`,`create_time` FROM `task` WHERE ( is_delete=0 and status=1 and type=3 ) ORDER BY state,create_time LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=5 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `article_id`,`category_id`,`title`,`create_time` FROM `article` WHERE ( is_delete=0 and status=1 and category_id=6 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_meta F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 8 行.
+NOTIC: [8] Undefined index: member F:\phpstudy\WWW\college1\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

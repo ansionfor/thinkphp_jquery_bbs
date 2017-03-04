@@ -1,0 +1,51 @@
+<include file="Public/header" />
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title">栏目管理</span>
+			</div>
+			<div class="list-body">
+				<div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>排序</th>
+            <th>栏目名称</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <volist name="data" id="vo" >
+          <if condition="$vo.child_num gt 0" >
+          <tr>
+            <th scope="row"><{$vo.order}></th>
+            <td><{$vo.name}></td>
+            <td><a href="<{:U('Index/categoryEdit',array('cid'=>$vo['category_id']))}>">编辑</a></td>
+          </tr>
+          <volist name="data" id="vo_child" >
+          <if condition="$vo_child.parent_id eq $vo['category_id']" >
+          <tr>
+            <th scope="row"><{$vo_child.order}></th>
+            <td>----<{$vo_child.name}></td>
+            <td><a href="<{:U('Index/categoryEdit',array('cid'=>$vo_child['category_id']))}>">编辑</a></td>
+          </tr>
+          </if>
+          </volist>
+
+          </if>
+          </volist>
+
+         
+        </tbody>
+      </table>
+    </div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="drivers">
+</div>
+<include file="Public/footer" />

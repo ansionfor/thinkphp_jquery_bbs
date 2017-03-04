@@ -1,0 +1,75 @@
+<include file="Public/header" />
+
+<div class="row">
+  <div class="panel panel-default">
+  <div class="panel-heading">
+
+          <switch name="task.state" >
+          <case value="1"><span class="list-status doing">进行中</span></case>
+          <case value="2"><span class="list-status done">已完成</span></case>
+          <case value="3"><span class="list-status closed">已关闭</span></case>
+          </switch>
+
+    <{$task.title}>
+  </div>
+  <div class="panel-body">
+    <{$task.content}>
+    <div class="post-info" style="margin-top:10px">作者：<a href="<{:U('Index/memberPub',array('mid'=>$task['member_id']))}>"><{$task.name}></a><br>发布时间：<{$task.create_time|date="y-m-d H:i",###}> <br><span>接受人数：<{$task.confirm}></span></div>
+  </div>
+  <div class="panel-footer col-md-3">
+
+     <div class="form-group">
+              <label for="exampleInputVerify">验证码</label>
+              <input type="text" class="form-control" id="exampleInputVerify" value="" placeholder="验证码">
+            </div>
+            <div class="form-group">
+              <img src="<{:U('Index/verifyCode')}>" onclick="changeCode();" class="img-responsive register-verifyCode" alt="">
+            </div>
+            <button type="button" onclick="confirmTask();" class="btn btn-primary">接受任务</button>
+
+
+  </div>
+</div>
+	</div>	
+</div>
+<script>
+    function confirmTask()
+    { 
+        var verifyCode = $('#exampleInputVerify').val()
+        if (verifyCode == '') {
+            alert('请填写验证码')
+            return
+        }else{
+            $.ajax({
+              url:"<{:U('Index/confirmTask')}>",
+              type:'get',
+              data:{
+                'tid':"<{$task.task_id}>",
+                'verifyCode':verifyCode
+              },
+              success:function(data){
+                console.log(data)
+                  if (data == 2) {
+                    alert('确认成功，请留意手机')
+                  }else if (data == 1) {
+                    alert('不能重复确认')
+                  }else if (data == 3) {
+                    alert('接受失败，请重试')
+                    changeCode()
+                  }else if (data == 5) {
+                    alert('请完善手机与班级信息')
+                    location.href="<{:U('Index/member')}>"
+                  }else if (data == 4){
+                    alert('验证码错误')
+                    changeCode()
+                  }else{
+                    alert('请先登录')
+                    location.href="<{:U('Index/regLog')}>"
+                  }
+              }
+            })
+        }
+    }
+
+</script>
+<include file="Public/footer" />

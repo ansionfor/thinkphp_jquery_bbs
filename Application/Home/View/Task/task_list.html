@@ -1,0 +1,38 @@
+<include file="Public/header" />
+
+<div class="row">
+		<div class="col-md-12">
+			<div class="list-header">
+				<span class="list-title"><{$category_meta.name}>列表</span>
+			</div>
+			<a href="<{:U('Index/postTask')}>"><button type="button" class="btn btn-primary post">我要发<{$category_meta.name}></button></a>
+			<div class="list-body task-list">
+				<ul>
+				<volist name="list" id="vo" >
+					<li>
+					<p>
+					<a href="<{:U('Index/taskPage',array('tid'=>$vo['task_id']))}>">
+					<switch name="vo.state" >
+					<case value="1"><span class="list-status doing">进行中</span></case>
+					<case value="2"><span class="list-status done">已完成</span></case>
+					<case value="3"><span class="list-status closed">已关闭</span></case>
+					</switch>
+					<span class="price"><{$vo.price}></span>
+					<span class="task-time"><{$vo.create_time|date="H:i",###}></span><{$vo.title}>
+					</a>
+					<span class="task-info pull-right"><span class="task-time-full"><{$vo.create_time|date="y-m-d H:i",###}></span></span>
+					</p>
+					</li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<{$page}>
+	</div>
+	
+
+</div>
+
+<include file="Public/footer" />

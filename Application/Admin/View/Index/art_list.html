@@ -1,0 +1,122 @@
+<include file="Public/header" />
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="list-header">
+        <span class="list-title">文章管理</span>
+      </div>
+      <div class="list-body">
+        <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>文章标题</th>
+            <th>文章栏目</th>
+            <th>发布者</th>
+            <th>审核</th>
+            <th>发布时间</th>
+            <th>更新时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+        <volist name="alist" id="vo" >
+          <tr>
+            <th scope="row"><{$vo.title}></th>
+            <td><{$vo.cname}></td>
+            <td><a href="__ROOT__/Index/memberPub/mid/<{$vo.member_id}>"><{$vo.name}></a></td>
+            <td>
+            <switch name="vo.status" >
+            <case value="1">已审核</case>
+            <case value="0">未审核</case>
+            </switch>
+            </td>
+            <td><{$vo.create_time|date="y-m-d H:i",###}></td>
+            <td><{$vo.update_time|date="y-m-d H:i",###}></td>
+            <td>
+            <switch name="vo.status" >
+            <case value="0">
+            <a href="javascript:void(0);" onclick="passArt(<{$vo.article_id}>)">通过</a></case>
+            <case value="1">
+            <a href="javascript:void(0);" onclick="notPassArt(<{$vo.article_id}>);">取消</a></case>
+            </switch>
+            &nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="deleteArt(<{$vo.article_id}>);">删除</a></td>
+          </tr>
+         </volist>
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <{$apage}>
+</div>
+
+  <hr class="drivers">
+</div>
+
+<script>
+  function passArt (aid) {
+    $.ajax({
+      url:"<{:U('Index/passArt')}>",
+      type:'get',
+      data:{
+        "aid":aid
+      },
+      success:function(data){
+        if (data == 1) {
+          alert('审核通过')
+          location.href=location.href
+        }else{
+          alert('审核失败或者已经通过')
+          location.href=location.href
+        }
+      }
+    })
+  }
+
+  function notPassArt (aid) {
+    $.ajax({
+      url:"<{:U('Index/notPassArt')}>",
+      type:'get',
+      data:{
+        "aid":aid
+      },
+      success:function(data){
+        if (data == 1) {
+          alert('修改成功')
+          location.href=location.href
+        }else{
+          alert('审核失败或者已经不通过')
+          location.href=location.href
+        }
+      }
+    })
+  }
+
+  function deleteArt (aid) {
+    $.ajax({
+      url:"<{:U('Index/deleteArt')}>",
+      type:'get',
+      data:{
+        "aid":aid
+      },
+      success:function(data){
+         if (data == 1) {
+          alert('删除成功')
+          location.href=location.href
+        }else{
+          alert('删除失败')
+          location.href=location.href
+        }
+      }
+      
+    })
+  }
+
+</script>
+
+<include file="Public/footer" />

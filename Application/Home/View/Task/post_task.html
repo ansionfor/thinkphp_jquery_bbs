@@ -1,0 +1,89 @@
+<include file="Public/header" />
+
+<div class="row">
+      <div class="list-header">
+        <span class="list-title">发布任务</span>
+
+      </div> 
+      <div class="col-md-6">
+    <div class="list-body task-list">
+       <form id="postTask" onsubmit="return checkTask();">
+            <div class="form-group">
+              <label for="exampleInputTitle">主题</label>
+              <input type="text" name="title" class="form-control" id="exampleInputTitle" placeholder="#拿快递、教吉他、约篮球、去旅游#" required>
+            </div>
+            <div class="form-group">
+              <div class="radio post-task-radio">
+
+                <label>
+                  <input type="radio" name="type" id="optionsRadios1" value="2" checked>
+                 需求
+                </label>
+              </div>
+              <div class="radio post-task-radio">
+                <label>
+                  <input type="radio" name="type" id="optionsRadios2" value="3">
+                 服务
+                </label>
+              </div>
+            </div>
+             <div class="form-group">
+              <label for="exampleInputPrice">价格</label>
+              <select class="form-control" name="price">
+                <option value="免费">免费</option>
+                <option value="议价">议价</option>
+                <option value="1元">1元</option>
+                <option value="2元">2元</option>
+                <option value="3元">3元</option>
+                <option value="4元">4元</option>
+                <option value="5元">5元</option>
+                <option value="6元">6元</option>
+                <option value="7元">7元</option>
+                <option value="8元">8元</option>
+                <option value="9元">9元</option>
+              </select>
+             </div>
+            <div class="form-group">
+              <label for="exampleInputDetail">详情</label>
+              <textarea class="form-control" name="content" rows="3" id="exampleInputDetail" required placeholder="详情"></textarea>
+            </div>
+             <div class="form-group">
+              <label for="exampleInputVerify">验证码</label>
+              <input type="text" class="form-control" name="verifyCode" id="exampleInputVerify" required placeholder="验证码">
+            </div>
+            <div class="form-group">
+              <img src="<{:U('Index/verifyCode')}>" onclick="changeCode();" class="img-responsive register-verifyCode" alt="">
+            </div>
+            <button type="submit" class="btn btn-default">发布</button>
+        </form>
+        </div>
+    </div>
+		<div class="col-md-6">			
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    function checkTask () 
+    {
+
+        $.ajax({
+          url:"<{:U('Index/addTask')}>",
+          data:$('#postTask').serialize(),
+          type:'post',
+          success:function(data){
+                if (data == 1) {
+                  alert('发布成功!')
+                  location.href = "<{:U('Index/index')}>"
+                }else if (data == 2) {
+                  alert('发布失败！请重试')
+                }else{
+                  alert('验证码错误')
+                  changeCode()
+                }
+          }
+        })
+        return false
+    }
+</script>
+
+<include file="Public/footer" />
