@@ -65,5 +65,5 @@ public function createSalt($value='')
 ###作者
 [ansion](http://ansion.cc)
  
-done at 2017-2-19
-git at 2017-3-4
+done on 2017-2-19
+git on 2017-3-4
