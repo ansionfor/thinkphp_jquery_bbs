@@ -25,4 +25,42 @@
  * 没有使用事务确保数据的原子性、完整性以及可维护性
  * 没有图片上传功能
  * 整体页面风格较为简洁、内容不足
+ * 没有遵守mvc的分层原则，控制器过于臃肿
  
+###Index控制器
+```php
+public function _initialize($value='')
+public function index()
+public function task($id='')
+public function postTask($id='')
+public function article($id='')
+public function postArticle($id='')
+public function addTask()
+public function addArticle()
+public function articlePage($id='',$aid='')
+public function artReply($aid='')
+public function comReply($aid='')
+public function taskPage($tid='')
+public function confirmTask($tid='')
+public function checkTaskMember($arr)
+public function checkMemberInfo($mid='')
+public function member($value='')
+public function changeInfo($type='')
+public function changeState($tid='')
+public function memberPub($mid='')
+public function regLog($value='')
+public function register($value='')
+public function login($value='')
+public function logout($value='')
+public function checkSession($value='')
+public function distrib($id)
+public function getMeta($id='')
+public function getParents($data, $id)
+public function adjustCrumb($nav,$arr,$id)
+public function verifyCode($value='')
+public function checkVerifyCode($code='')
+public function createSalt($value='')
+```
+
+###作者
+[ansion](http://ansion.cc)
